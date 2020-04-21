@@ -1,0 +1,21 @@
+﻿<Application x:Class="TheDeptBook_Assignment1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TheDeptBook_Assignment1"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="myBrush" Color="AliceBlue"/>
+        <DataTemplate x:Key="debtTemplate">
+            <WrapPanel>
+                <TextBlock Text="{Binding Path=Name}" Width="100" Margin="5"></TextBlock>
+                <TextBlock Text="{Binding Path=Debt}" Width="100" Margin="5"></TextBlock>
+            </WrapPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="debtsTemplate">
+            <WrapPanel>
+                <TextBlock Text="{Binding Path=DateTime}" Width="150" Margin="5"></TextBlock>
+                <TextBlock Text="{Binding Path=Debt}" Width="100" Margin="5"></TextBlock>
+            </WrapPanel>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
